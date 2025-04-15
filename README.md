@@ -21,3 +21,7 @@ _NOTE: The original version of this program was created with the assistance of M
 &nbsp;&nbsp;&nbsp;&nbsp;&bull;Returns average of all similarity scores rounded to two decimal places<br>
 &bull;Adds column with similarity scores to start of dataframe with merged records and sorts on similarity score
 &bull;Writes results to a new CSV using timestamp (month, day, hour, minute) to avoid overwriting earlier outputs
+
+<b>Warnings/Areas for Improvement</b><br>
+&bull;Doesn't account for records with multiple ISBNs
+&bull;Doesn't flag records where "updated" version is missing key fields in "original" version (NOTE: in earlier testing, this often happened because original versions were improperly coded)
