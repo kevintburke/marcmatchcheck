@@ -19,5 +19,5 @@ _NOTE: The original version of this program was created with the assistance of M
 &nbsp;&nbsp;&nbsp;&nbsp;&bull;Returns 100 for exact ISBN match (including None) or 0 for mis-match<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&bull;Uses fuzz.WRatio to calculate similarity of all other fields (including None)<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&bull;Returns average of all similarity scores rounded to two decimal places<br>
-&bull;Adds column with similarity scores to start of dataframe with merged records
+&bull;Adds column with similarity scores to start of dataframe with merged records and sorts on similarity score
 &bull;Writes results to a new CSV using timestamp (month, day, hour, minute) to avoid overwriting earlier outputs
